@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #373737;
+    background: #F4D03F;
+}
+
+.parent-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 450px;
+    min-height: 70vh;
+    padding: 16px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(114, 114, 114, 0.5);
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 24px;
+}
+
+form {
+    width: 100%;
+    position: relative;
+    padding-bottom: 16px;
+}
+
+form input {
+    padding: 12px;
+    width: 95%;
+    border: 1px solid #E2E2E2;
+}
+
+form input::placeholder {
+    color: #a9a9a9;
+}
+
+form button {
+    color: white;
+    font-size: 24px;
+    background: #fd5f6c;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    top: -5px;
+    right: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    transform: rotate(180deg) scale(1.1, 1.1);
+}
+
+.todo-container {
+    width: 100%;
+    height: 100%;
+}
+
+.todo-list {
+    list-style: none;
+}
+
+.todo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(169, 169, 169, 0.2);
+    transition: all 0.3s ease;
+    flex-wrap: wrap;
+}
+
+.todo-item {
+    max-width: 340px;
+    overflow-wrap: break-word;
+    padding: 0 0 0 12px;
+    flex: 1;
+}
+
+.complete-btn, .trash-btn {
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    background: none;
+}
+
+.complete-btn {
+    color: #22C18D;
+}
+
+.trash-btn {
+    color: #ff4444;
+}
+
+.fa-trash, .fa-check {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall {
+    transform: translateX(8rem);
+    opacity: 0;
+}

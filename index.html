@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+          integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+    <title>My Todo List</title>
+</head>
+<body class="body">
+
+<div class="parent-container">
+    <div class="container">
+        <div class="header">
+            <h2>Todo List</h2>
+        </div>
+        <form>
+            <input type="text" placeholder="add a new todo item" class="todo-input">
+            <button class="todo-submit-btn" type="submit">
+                <i class="fas fa-plus"></i>
+            </button>
+        </form>
+
+        <div class="todo-container">
+            <ul class="todo-list">
+                <li class="todo completed"><p class="todo-item">This is a list</p>
+                    <button class="complete-btn"><i class="fas fa-check"></i></button>
+                    <button class="trash-btn"><i class="fas fa-trash"></i></button>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<script rel="script" src="main.js"></script>
+</body>
+</html>
